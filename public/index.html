@@ -1,0 +1,156 @@
+<!-- https://www.tailwindawesome.com/resources/rainblur-landing-page/demo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalnia&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Group4-Project</title>
+</head>
+
+
+<body class=" tracking-normal text-indigo-400 font-body bg-[url('/assets/image/pasted.png')] bg-cover  min-w-[789px]">
+    <div class="backdrop-blur h-dvh py-10 pb-16">
+
+        <header class=" mx-auto shadow shadow-blue-950 text-center ">
+            <h1 class="text-4xl text-amber-400 font-bold font-heading py-6">The University 
+                <span class=" bg-clip-text text-6xl text-transparent bg-gradient-to-r from-indigo-600 via-indigo-300 to-red-500 font-logo">
+                    of Gaming</span>
+            </h1>
+        </header>
+
+        <!--Content md: 5 column grid container-->
+        <div class="flex flex-col text-amber-400 m-3 md:grid md:grid-cols-5 md:gap-10 ">
+             <!--Search history 1 column item -->
+            <div class="md:col-span-1 " >
+                <!--collapse component-->
+                <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-gradient-to-r from-cyan-500 to-blue-500 ">
+                    <div class="collapse-title text-base font-medium">
+                        See Recently Searched Games
+                    </div>
+                    <div class="collapse-content">
+                        <ul class="text-right recent-search">
+                            <!--Searched Games go here-->
+                        </ul>
+                    </div>
+                </div>
+                <!--collapse component End-->
+            </div>
+            <!--Search history End -->
+
+            <!-- md: 4 columns item -->
+            <main class=" md:col-span-4 min-h-full">
+                <!-- Index page --><!-- md: 3 columns grid container -->
+                <div class="index-page md:grid md:grid-cols-3 md:gap-6">
+                    <!--Left Col -->
+                    <section class="col-span-1">
+                        <h1
+                            class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
+                            Click
+                            <span
+                                class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-amber-300 to-indigo-700">
+                                Your Way
+                            </span>
+                            to gaming glory!
+                        </h1>
+                        <p class="leading-normal text-amber-400 md:text-2xl mb-8 text-center md:text-left">
+                            Where you can search for any game possibly ever existed & discover the uncharted gaming world!
+                        </p>
+    
+                        <form class="bg-gray-900 opacity-95 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
+                            <div class="mb-4">
+                                <label class="block text-blue-300 py-2 font-bold mb-2" for="game-name">
+                                    Search for a game that is currently hunting you
+                                </label>
+                                <input class="game-input peer shadow appearance-none border rounded w-full p-3 placeholder-shown:text-white  focus:placeholder:text-purple-500 text-purple-500 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out" id="game-name" type="text" placeholder="an epic game that is called ..." required/>
+                                <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm error-text">
+                                    Please provide a game name.
+                                </p>
+                            </div>
+    
+                            <div class="flex items-center justify-between pt-4">
+                                <button
+                                    class="search bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                                    type="button">
+                                    Search
+                                </button>
+                            </div>
+                        </form>
+                    </section>
+                    <!--Left Col End-->
+                    <!--Right Col-->
+                    <div class=" p-12 h-auto relative col-span-2  md:my-20">
+                        <img class=" block mx-auto w-full md:w-4/5 animate-fliping-card1 transition hover:scale-125 duration-1000 ease-out hover:animate-none hover:z-50 absolute rounded-xl object-cover"
+                            src="/assets/image/peakpx.jpg" width = "100%" height="100%"/>
+                        <img class=" block mx-auto w-full md:w-4/5 animate-fliping-card2 transition hover:scale-125 duration-1000 ease-out  hover:animate-none hover:z-50 absolute  rounded-xl"
+                            src="/assets/image/god-of-war2.jpg" />
+                        <img class="  block  mx-auto w-full md:w-4/5 animate-fliping-card3 transition hover:scale-125 duration-1000 ease-out hover:animate-none hover:z-50 absolute  rounded-xl"
+                            src="/assets/image/call-of-duty.jpg" />
+                        <img class="  block mx-auto w-full md:w-4/5 animate-fliping-card4 transition hover:scale-125 duration-1000 ease-out hover:animate-none hover:z-50 absolute  rounded-xl"
+                            src="/assets/image/game.jpg" />
+                        </div>
+                    <!--Right Col End -->
+                </div>
+                <!--Index page End-->
+                <!-- games page / search result page -->
+                <div class="games-page hidden ">
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <p></p>
+                            <!-- game cards go below -->
+                            <div class="games md:grid md:grid-cols-auto-fill md: gap-4">
+                            </div>
+                            <!-- game cards end -->
+                            <div class="page-nav mx-auto my-3">
+                            </div>
+                        </div>
+                        <div class="self-center">
+                            <button class="return btn btn-primary">Return To Index Page</button>
+                        </div>
+                    </div>
+  
+                
+
+                    <!-- <div>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box">
+                                <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">Press ESC key or click the button below to close</p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        
+                                        <button class="btn">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div> -->
+
+                </div> 
+                <!-- games-page end -->
+            </main>
+        </div>
+        <!--Content End-->
+        <!--Footer-->
+        <!-- <footer class="absolute right-0 bottom-0 pt-6 pb-6 text-sm text-center md:text-right fade-in bg-slate-50 w-full">
+            &copy; Group4 2024 - edX Coding Bootcamp @ The University of Sydney
+            - Template by
+            <a class="text-amber-800 no-underline hover:no-underline"
+                href="https://www.tailwindtoolbox.com">TailwindToolbox.com</a>
+        </footer> -->
+        <!--Footer End-->
+    </div>
+    <!--Backdrop End-->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
