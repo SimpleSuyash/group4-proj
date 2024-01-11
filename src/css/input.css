@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalnia:wght@500;700&family=Poppins:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "tailwindcss/apply"; */
+.positioned{
+    @apply  opacity-0 absolute -left-full;
+}
+.data-body{
+    @apply flex flex-wrap gap-2 text-sm ;
+}
+.data-caption{
+    @apply  text-pink-400;
+}
+.data{
+    @apply text-amber-400  italic;
+}
